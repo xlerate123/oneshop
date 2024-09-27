@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://images.yourstory.com/cs/images/companies/Snitch-1620061651111.jpg" type="image/x-icon">
+  <!-- Using favicon -->
+  <script src="https://kit.fontawesome.com/f7854c157a.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <title>Discover Your Style - One Shop</title>
+</head>
+
+<body>
+  <!--navigation-->
+
+  <nav class="navbar bg-dark fixed-top ">
+    <div class="container-fluid d-flex justify-content-between align-items-center ">
+      
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ONE SHOP</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action " style="font-size: 20px;">
+              NEW ARRIVALS
+            </a>
+            <a href="#" class="list-group-item list-group-item-action" style="font-size: 20px;">BEST SELLING</a>
+            <a href="#" class="list-group-item list-group-item-action" style="font-size: 20px;">SNITCH LUXE</a>
+            <a href="#" class="list-group-item list-group-item-action dropdown-toggle" style="font-size: 20px;"
+              data-bs-toggle="dropdown" aria-expanded="false">SHOP</a>
+
+            <div class="dropdown">
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Shirts</a></li>
+                <li><a class="dropdown-item" href="#">T-shirts</a></li>
+                <li><a class="dropdown-item" href="#">Cargo Pants</a></li>
+                <li><a class="dropdown-item" href="#">Jeans</a></li>
+              </ul>
+            </div>
+
+            <a href="#" class="list-group-item list-group-item-action" style="font-size: 20px;">TRACK ORDER</a>
+            <a href="#" class="list-group-item list-group-item-action" style="font-size: 20px;">PLACE A RETURN/EXCHANGE
+              REQUEST</a>
+            <a href="#" class="list-group-item list-group-item-action" style="font-size: 20px;">BECOME OUR BRAND
+              AMBASSADOR</a>
+            <a href="#" class="list-group-item list-group-item-action" style="font-size: 20px;">AFFILIATE PROGRAM</a>
+            <a href="#" class="list-group-item list-group-item-action" style="font-size: 20px;">CUSTOMER SUPPORT</a>
+            <a href="#" class="list-group-item list-group-item-action" style="font-size: 20px;">VISIT STORE</a>
+            <a class="list-group-item list-group-item-action" style="font-size: 20px;">REVOLVE</a>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-light font-weight-bold mx-auto order-2" href="index.html">
+        <img src="logo1.png" id="logo1">
+      </a>
+
+      <div class="d-flex nav nav-light  align-items-center">
+        <a class="nav-link active text-light  d-none d-lg-block " href="logreg.html"><i class="fa fa-solid fa-user" style="font-size: 20px;"></i>
+        </a>
+
+
+        <i class=" fas fa-search nav-link text-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+          aria-controls="offcanvasTop" style="cursor: pointer;font-size: 20px;"></i>
+
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+          <div class="offcanvas-header">
+            <h5 id="offcanvasTopLabel">Feel Your Style</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="search-bar d-flex m-auto" id="searchBar">
+              <input type="text" class="form-control" placeholder="Search..." style="margin-right: 2%;">
+              <button class="btn btn-dark" type="submit">Search</button>
+
+            </div>
+          </div>
+        </div>
+
+        <a class="nav-link text-light d-none d-lg-block " href="#" style="font-size: 23px;"><i class="fa fa-heart-o"></i></a>
+        <a class="nav-link text-light d-none d-lg-block " href="#" style="font-size: 20px;"><i class="fa fa-shopping-cart"></i></a>
+        <a class="nav-link text-light d-none d-lg-block " href="#" style="font-size: 20px;"><i class="fa fa-camera-retro"></i></a>
+
+      </div>
+
+
+    </div>
+  </nav>
+
+  <!--Bottom navbar for smaller screens-->
+  <nav class="navbar bg-dark fixed-bottom d-flex justify-content-around d-lg-none" style="border: none;">
+    
+    <a class="nav-link text-light" href="#"><i class="fa fa-heart-o"></i></a>
+    
+    <a class="nav-link text-light" href="#"><i class="fa fa-camera-retro"></i></a>
+    <a class="nav-link text-light" href="#"><i class="fa fa-shopping-cart"></i></a>
+    <a class="nav-link text-light" href="logreg.html"><i class="fa fa-user"></i></a>
+  </nav>
+  
+
+  <!--carousel-->
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="shirt-1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block text-light">
+          <h2>Festive Season</h2>
+          <p>Enjoy superb deals</p>
+          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="shirt.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block text-light">
+          <h2>Festive Season</h2>
+          <p>Enjoy superb deals</p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+
+  <!--cards-->
+
+  <div>
+    <div class="text-center" id="nm">
+      <button href="#" class="btn btn-outline-dark m-1 active rounded-pill " id="drop" aria-pressed="true">NEW
+        DROPS</button>
+      <button href="#" class="btn btn-outline-dark rounded-pill m-1" id="most">MOST TRENDING</button>
+    </div>
+
+    
+    <!--new-->
+    <section id="new">
+      <div class="container-fluid py-4">
+
+        <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"> 
+        <div class="trending card m-2 shadow h-100" data-product-id="shirt1">
+           
+          <img class="card-img-top1" src="model1.jpg" alt="Card image cap">
+          <img class="card-img-top2"
+            src="https://www.snitch.co.in/cdn/shop/products/4MSS1813-02-M3277.jpg?v=1682190622&width=1800"
+            alt="Card image cap">
+          
+          <div class="card-body">
+            <p class="card-text" style="font-size: 13px;">Trekker Navy Cargo Pant</p>
+            <p class="card-text"><small class="text-muted">Rs. 1799</small></p>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="trending card m-2 shadow h-100"  data-product-id="shirt2">
+          <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSS2867-01-M20.jpg?v=1710498103"
+            alt="Card image cap">
+          <img class="card-img-top2"
+            src="https://www.snitch.co.in/cdn/shop/files/4MSN1310-14-M32.jpg?v=1710412712&width=1800"
+            alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 13px;">Intricate White Crochet Shirt</p>
+            <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="trending card m-2 shadow h-100" data-product-id="shirt3">
+          <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSS2867-02-M23.jpg?v=1710743768"
+            alt="Card image cap">
+          <img class="card-img-top2"
+            src="https://www.snitch.co.in/cdn/shop/files/4MSS2846-03-M22.jpg?v=1707818772&width=1800"
+            alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 13px;">Intricate Black Crochet Shirt</p>
+            <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="trending card m-2 shadow h-100"  data-product-id="shirt4">
+          <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSS2868-01-M23.jpg?v=1710506031"
+            alt="Card image cap">
+          <img class="card-img-top2"
+            src="https://www.snitch.co.in/cdn/shop/files/4MSS2846-05-M30.jpg?v=1707829222&width=1800"
+            alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 13px;">Honey Hive White Crochet Shirt</p>
+            <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="trending card m-2 shadow h-100"  data-product-id="shirt5">
+          <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSS2868-02-M19.jpg?v=1710505330"
+            alt="Card image cap">
+          <img class="card-img-top2"
+            src="https://www.snitch.co.in/cdn/shop/files/4MSS2846-04-M49.jpg?v=1707819149&width=1800"
+            alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 13px;">Honey Hive Black Crochet Shirt</p>
+            <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+          </div>
+        </div>
+        </div>
+
+      </div>
+      </div>
+    </section>
+    
+
+    <!--trending-->
+    <section id="trend">
+      <div class="container-fluid py-4">
+        
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">   
+        <div class="trending card m-2 shadow h-100" >
+          <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSD3650-02-3227.jpg?v=1711004796"
+            alt="Card image cap">
+          <img class="card-img-top2"
+            src="https://www.snitch.co.in/cdn/shop/products/4MSS1813-02-M3277.jpg?v=1682190622&width=1800"
+            alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 13px;">Trekker Navy Pant</p>
+            <p class="card-text"><small class="text-muted">Rs. 1799</small></p>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"> 
+        <div class="trending card m-2 shadow h-100" >
+          <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSS2540-01-M21.jpg?v=1711346762"
+            alt="Card image cap">
+          <img class="card-img-top2"
+            src="https://www.snitch.co.in/cdn/shop/files/4MSN1310-14-M32.jpg?v=1710412712&width=1800"
+            alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 13px;">White Crochet Shirt</p>
+            <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"> 
+        <div class="trending card m-2 shadow h-100" >
+          <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSS2540-06-M36.jpg?v=1711347728"
+            alt="Card image cap">
+          <img class="card-img-top2"
+            src="https://www.snitch.co.in/cdn/shop/files/4MSS2846-03-M22.jpg?v=1707818772&width=1800"
+            alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 13px;">Black Crochet Shirt</p>
+            <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"> 
+        <div class="trending card m-2 shadow h-100" >
+          <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSR5084-01-3225.jpg?v=1711537300"
+            alt="Card image cap">
+          <img class="card-img-top2"
+            src="https://www.snitch.co.in/cdn/shop/files/4MSS2846-05-M30.jpg?v=1707829222&width=1800"
+            alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 13px;">Honey Hive White Crochet Shirt</p>
+            <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"> 
+        <div class="trending card m-2 shadow h-100">
+          <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSR5106-01-3221.jpg?v=1711457620"
+            alt="Card image cap">
+          <img class="card-img-top2"
+            src="https://www.snitch.co.in/cdn/shop/files/4MSS2846-04-M49.jpg?v=1707819149&width=1800"
+            alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 13px;">Honey Hive Black Crochet Shirt</p>
+            <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section> 
+
+
+
+    <div class="text-center">
+      <button class="btn btn-outline-dark rounded-0">VIEW ALL</button>
+    </div><br>
+
+    <h2 class="text-center ">SEASONAL FAV'S&nbsp;<img
+        src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png" style="width: 3rem;"
+        class="mb-3"></h2>
+
+        <div class="container-fluid py-4">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+              <div class="seasonal card shadow h-100">
+                <img class="card-img bg-dark"
+                  src="https://www.snitch.co.in/cdn/shop/files/4MST2237-11-M25.jpg?v=1705739638&width=1800" alt="ESSENTIALS">
+                <div class="card-img-overlay d-flex align-items-end">
+                  <h5 class="card-title mb-0 text-white">ESSENTIALS</h5>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+              <div class="seasonal card shadow h-100">
+                <img class="card-img bg-dark"
+                  src="https://www.snitch.co.in/cdn/shop/files/4MST2235-02-M26.jpg?v=1704366460&width=1800" alt="OVERSIZED">
+                <div class="card-img-overlay d-flex align-items-end">
+                  <h5 class="card-title mb-0 text-white">OVERSIZED</h5>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+              <div class="seasonal card shadow h-100">
+                <img class="card-img bg-dark"
+                  src="https://www.snitch.co.in/cdn/shop/products/Snitch_june22_4248.jpg?v=1659938381&width=1800"
+                  alt="CHINOS">
+                <div class="card-img-overlay d-flex align-items-end">
+                  <h5 class="card-title mb-0 text-white">CHINOS</h5>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+              <div class="seasonal card shadow h-100">
+                <img class="card-img bg-dark"
+                  src="https://www.snitch.co.in/cdn/shop/files/4MSO4542-03-3237.jpg?v=1708070754&width=1800" alt="CARGOS">
+                <div class="card-img-overlay d-flex align-items-end">
+                  <h5 class="card-title mb-0 text-white">CARGOS</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+   
+
+    <div id="four">
+      <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-6 col-sm-3 col-lg-2">
+        <button href="#" class="btn btn-outline-dark m-1 active rounded-pill w-100" aria-pressed="true" id="btnshirt">SHIRTS</button></div>
+        <div class="col-6 col-sm-3 col-lg-2">
+        <button href="#" class="btn btn-outline-dark rounded-pill m-1 w-100" id="btntshirt">T-SHIRTS</button></div>
+        <div class="col-6 col-sm-3 col-lg-2">
+        <button href="#" class="btn btn-outline-dark rounded-pill m-1 w-100" id="btnjeans">JEANS</button></div>
+        <div class="col-6 col-sm-3 col-lg-2">
+        <button href="#" class="btn btn-outline-dark rounded-pill m-1 w-100" id="btntrousers">TROUSERS</button></div>
+      </div>
+      </div>
+
+      <!--shirts-->
+      <section id="shirts">
+      <div class="container-fluid py-4 ">
+
+        <div class="row justify-content-center">
+          
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+        <div class="card m-3 shadow h-100" >
+          <img class="card-img-top1" src="model1.jpg" alt="Card image cap">
+          
+          <div class="card-body">
+            <p class="card-text" style="font-size: 13px;">Trekker Navy Cargo Pant</p>
+            <p class="card-text"><small class="text-muted">Rs. 1799</small></p>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+        <div class="card m-3 shadow h-100" >
+          <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSS2867-01-M20.jpg?v=1710498103"
+            alt="Card image cap">
+
+          <div class="card-body">
+            <p class="card-text" style="font-size: 13px;">Intricate White Crochet Shirt</p>
+            <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+        <div class="card m-3 shadow h-100" >
+          <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSS2867-02-M23.jpg?v=1710743768"
+            alt="Card image cap">
+          
+          <div class="card-body">
+            <p class="card-text" style="font-size: 13px;">Intricate Black Crochet Shirt</p>
+            <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+          </div>
+        </div>
+        </div>
+
+
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+        <div class="card m-3 shadow h-100" >
+          <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSS2868-02-M19.jpg?v=1710505330"
+            alt="Card image cap">
+          
+          <div class="card-body">
+            <p class="card-text" style="font-size: 13px;">Honey Hive Black Crochet Shirt</p>
+            <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </section> 
+        
+  <!--t-shirts-->
+  <section id="tshirts">
+    <div class="container-fluid py-4">
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card m-3 shadow h-100" >
+        <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/94153a5920aba6d43640d820a458ecdd.png?v=1712607637" alt="Card image cap">
+        
+        <div class="card-body">
+          <p class="card-text" style="font-size: 13px;">Trekker Navy Cargo Pant</p>
+          <p class="card-text"><small class="text-muted">Rs. 1799</small></p>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card m-3 shadow h-100" >
+        <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/5770811f446b8b96364282842ea1e2d2.png?v=1715237292"
+          alt="Card image cap">
+        
+        <div class="card-body">
+          <p class="card-text" style="font-size: 13px;">Intricate White Crochet Shirt</p>
+          <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card m-3 shadow h-100" >
+        <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/b469ae2602e865f3b435ed1283371a9c.webp?v=1722841487"
+          alt="Card image cap">
+       
+        <div class="card-body">
+          <p class="card-text" style="font-size: 13px;">Intricate Black Crochet Shirt</p>
+          <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+        </div>
+      </div>
+      </div>
+
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card m-3 shadow h-100" >
+        <img class="card-img-top1" src="https://images.unsplash.com/photo-1673092147872-5ddb03194341?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8amVhbnMlMjBtYW58ZW58MHx8MHx8fDA%3D"
+          alt="Card image cap">
+        
+        <div class="card-body">
+          <p class="card-text" style="font-size: 13px;">Honey Hive Black Crochet Shirt</p>
+          <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+        </div>
+      </div>
+      </div>
+
+      </div>
+    </div>
+  </section> 
+
+
+  <!--Jeans-->
+  <section id="jeans">
+    <div class="container-fluid py-4">
+      
+      <div class="row justify-content-center">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card m-3 shadow h-100" >
+        <img class="card-img-top1" src="https://images.unsplash.com/photo-1673092147872-5ddb03194341?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8amVhbnMlMjBtYW58ZW58MHx8MHx8fDA%3D" alt="Card image cap">
+        
+        <div class="card-body">
+          <p class="card-text" style="font-size: 13px;">Trekker Navy Cargo Pant</p>
+          <p class="card-text"><small class="text-muted">Rs. 1799</small></p>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card m-3 shadow h-100" >
+        <img class="card-img-top1" src="https://images.unsplash.com/photo-1619659712390-c0ffe7eec650?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGplYW5zJTIwbWFufGVufDB8fDB8fHww"
+          alt="Card image cap">
+       
+        <div class="card-body">
+          <p class="card-text" style="font-size: 13px;">Intricate White Crochet Shirt</p>
+          <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card m-3 shadow h-100" >
+        <img class="card-img-top1" src="https://images.unsplash.com/photo-1650377199055-51e177cebe47?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGplYW5zJTIwbWFufGVufDB8fDB8fHww"
+          alt="Card image cap">
+  
+        <div class="card-body">
+          <p class="card-text" style="font-size: 13px;">Intricate Black Crochet Shirt</p>
+          <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card m-3 shadow h-100" >
+        <img class="card-img-top1" src="https://images.unsplash.com/photo-1621561248577-5695129fb3b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGplYW5zJTIwbWFufGVufDB8fDB8fHww"
+          alt="Card image cap">
+        
+        <div class="card-body">
+          <p class="card-text" style="font-size: 13px;">Honey Hive Black Crochet Shirt</p>
+          <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+        </div>
+      </div>
+      </div>
+    
+      </div>
+    </div>
+  </section> 
+        
+  <!--trousers-->
+  <section id="trousers">
+    <div class="container-fluid py-4">
+      
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">  
+      <div class="card m-3 shadow h-100" >
+        <img class="card-img-top1" src="model1.jpg" alt="Card image cap">
+        
+        <div class="card-body">
+          <p class="card-text" style="font-size: 13px;">Trekker Navy Cargo Pant</p>
+          <p class="card-text"><small class="text-muted">Rs. 1799</small></p>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card m-3 shadow h-100" >
+        <img class="card-img-top1" src="https://images.unsplash.com/photo-1646888000770-5fa873c69e6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fGplYW5zJTIwbWFufGVufDB8fDB8fHww"
+          alt="Card image cap">
+  
+        <div class="card-body">
+          <p class="card-text" style="font-size: 13px;">Intricate White Crochet Shirt</p>
+          <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card m-3 shadow h-100" >
+        <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSS2867-02-M23.jpg?v=1710743768"
+          alt="Card image cap">
+        
+        <div class="card-body">
+          <p class="card-text" style="font-size: 13px;">Intricate Black Crochet Shirt</p>
+          <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card m-3 shadow h-100" >
+        <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSS2868-02-M19.jpg?v=1710505330"
+          alt="Card image cap">
+        
+        <div class="card-body">
+          <p class="card-text" style="font-size: 13px;">Honey Hive Black Crochet Shirt</p>
+          <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+        </div>
+      </div>
+      </div>
+
+      </div>
+    </div>
+  </section> 
+
+      <div class="text-center">
+        <button class="btn btn-outline-dark rounded-0">VIEW ALL</button>
+      </div><br>
+
+      <div>
+        <div class="jumbotron rounded-0 align-content-center"
+          style="background-image: url(https://images.unsplash.com/photo-1575425939964-f309288cc007?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);background-repeat: no-repeat;background-size: cover;background-position: center;">
+          
+          <div class="text-box p-4 bg-light rounded shadow text-center m-auto" style="max-width: fit-content; opacity: 0.85;" style="max-width: fit-content;">
+            <h1 class="display-3" style="color:black; font-family: 'Arial', sans-serif;cursor: pointer;" >SHOP NOW</h1>
+          </div>
+          <div class="bg-info m-auto" style="max-width: fit-content;">
+            <h1>FLAT 25% OFF</h1>
+          </div>
+        </div>
+      </div><br>
+
+      <div>
+        <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-3 col-lg-2">
+          <button href="#" class="btn btn-outline-dark m-1 active rounded-pill w-100" aria-pressed="true"  id="btnshort">SHORTS</button></div>
+          <div class="col-6 col-sm-3 col-lg-2">
+          <button href="#" class="btn btn-outline-dark rounded-pill m-1 w-100" id="btncords">CO-ORDS</button></div>
+        </div>
+        </div>
+
+      <!--shorts-->  
+      <section id="shorts">  
+        <div class="container-fluid py-4 ">
+          <div class="row justify-content-center">
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card m-3 shadow h-100" >
+            <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSH7017-06-3223.jpg?v=1710244470"
+              alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text" style="font-size: 13px;">Pink Shorts</p>
+              <p class="card-text"><small class="text-muted">Rs. 1799</small></p>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card m-3 shadow h-100" >
+            <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSH7017-05-3220.jpg?v=1710244456"
+              alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text" style="font-size: 13px;">Yellow Shorts</p>
+              <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card m-3 shadow h-100" >
+            <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSH7017-04-3218.jpg?v=1710244441"
+              alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text" style="font-size: 13px;">Grey Shorts</p>
+              <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+            </div>
+          </div>
+          </div>
+
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card m-3 shadow h-100" >
+            <img class="card-img-top1"
+              src="https://www.snitch.co.in/cdn/shop/files/4MSH7017-03-3212.jpg?v=1710244543&width=1800"
+              alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text" style="font-size: 13px;">Beige Shorts</p>
+              <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+            </div>
+          </div>
+          </div>
+
+        </div>
+        </div>
+      </section> 
+       
+      <!--coords-->
+        <section id="cords">  
+          <div class="container-fluid py-4">
+
+            <div class="row justify-content-center">
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card m-3 shadow h-100" >
+              <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSCR7244-02-M54_b0a3e974-5fa2-4e55-9188-d2d3a50a4052.jpg?v=1697184153&width=900"
+                alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text" style="font-size: 13px;">Pink Shorts</p>
+                <p class="card-text"><small class="text-muted">Rs. 1799</small></p>
+              </div>
+            </div>
+            </div>
+  
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card m-3 shadow h-100" >
+              <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/9cb6af4bb0ba6299a3bb8b73b15d2c19.webp?v=1719913472&width=900"
+                alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text" style="font-size: 13px;">Yellow Shorts</p>
+                <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+              </div>
+            </div>
+            </div>
+  
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card m-3 shadow h-100" >
+              <img class="card-img-top1" src="https://www.snitch.co.in/cdn/shop/files/4MSH7017-04-3218.jpg?v=1710244441"
+                alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text" style="font-size: 13px;">Grey Shorts</p>
+                <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+              </div>
+            </div>
+            </div>
+  
+  
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card m-3 shadow h-100" >
+              <img class="card-img-top1"
+                src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MSCR7244-06-M1.jpg?v=1685192884&width=800"
+                alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text" style="font-size: 13px;">Beige Shorts</p>
+                <p class="card-text"><small class="text-muted">Rs. 999</small></p>
+              </div>
+            </div>
+            </div>
+          
+            </div>
+          </div>
+        </section>
+        
+        <hr><br>
+      </div>
+
+    <!--Footer-->
+    <section id="footer" class="d-flex container py-2">
+      <div class="row" >
+      <div id="offline" class="col-12 col-md-6 col-lg-3 mb-4 text-md-start">
+      <ul> 
+      <li><h6 class="lead">OFFLINE STORE</h6></li>
+      <li style="text-decoration: underline">
+      <a>Find Stores Near me</a></li>
+      </ul>
+      </div>
+    
+
+      <div id="know" class="col-12 col-md-6 col-lg-3 mb-4 text-md-start" >
+      <ul>
+      <li><h6 class="lead">GET TO KNOW US</h6></li>
+      <li><a>FAQ's</a></li>
+      <li><a>Contact Us</a></li>
+      <li><a>Blogs</a></li>
+      <li><a>Terms & Conditions</a></li>
+      </ul>
+      </div>
+      
+      <div id="track" class="col-12 col-md-6 col-lg-3 mb-4 text-md-start">
+      <ul>
+      <li><h6 class="lead">TRACK OR RETURN/EXCHANGE ORDER</h6></li>
+      <li><a>TRACK ORDER</a></li>
+      <li><a>PLACE RETURN/EXCHANGE REQUEST</a></li>
+      <li><a>RETURNS/EXCHANGE POLICY</a></li>
+      </ul>
+      </div>
+      
+      <div id="care" class="col-12 col-md-6 col-lg-3 mb-4 text-md-start">
+        <ul>
+        <li><h6 class="lead">CUSTOMER CARE</h6></li>
+        <li><p>Timings: 10 AM - 7 PM (Mon - Sat)</p></li>
+        <li><p>Whatsapp: +91 9090909090</p></li>
+        <li><p>Instagram: @oneshop.co.in</p></li>
+        </ul>
+      </div>
+      
+      </div>
+    </section>
+
+<section id="socials">
+    <div class="social-icons m-5 text-start ">
+      <div class="text-center">
+        <h6 class="lead mb-3">FOLLOW US</h6>
+        
+        <ul class="list-inline"></ul>
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.twitter.com" target="_blank">
+            <i class="fa-brands fa-x-twitter fa-2x"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.youtube.com" target="_blank">
+            <i class="fab fa-youtube fa-2x"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p class="text-center fw-semibold mt-4">&copy; 2024 Designed and made by Nikhil Mohanty</p>
+  
+  </section>
+    
+   
+
+      <script src="script.js"></script>
+</body>
+
+</html>

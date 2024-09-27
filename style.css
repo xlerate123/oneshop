@@ -1,0 +1,286 @@
+*{
+box-sizing: border-box;
+}
+
+.search-bar{
+    width: calc(100% - 90px);
+}
+
+#logo1{
+    width: 170px;
+}
+
+
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+.carousel-caption h2,
+.carousel-caption p{
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    font-size: 30px;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 600px; /* Adjust this value as needed */
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+.seasonal{
+    transition: all 0.3s;
+    border: none;
+    overflow: hidden;
+}
+
+.seasonal:hover{
+    transform: scale(1.15);
+}
+
+.seasonal .card-title{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    position: absolute;
+}
+
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    margin: 10px;
+}
+
+.social-icons i {
+    color: #000;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons i:hover {
+    color: #007bff; /* Change color on hover */
+  }
+
+  .social-icons .fa-instagram:hover {
+    color: rgb(224, 73, 98); /* Change color on hover */
+  }
+
+  .social-icons .fa-youtube:hover {
+    color: red; /* Change color on hover */
+  }
+  
+  .social-icons ul {
+    padding-left: 0;
+  }
+  
+
+
+#footer a{
+    font-size: 13px;
+}
+
+#footer p{
+    font-size: 13px;
+}
+
+.seasonal .card-img-overlay {
+    padding: 1rem;
+    z-index: 1;
+  }
+
+.card-img-top1{
+    width: 100%; height: auto;
+}
+
+.card-img-top2{
+    display: none;
+    width: 100%; height: auto;
+}
+
+#four{
+    margin-top: 45px;
+}
+
+.trending{
+    cursor: pointer;
+}
+
+.trending:hover .card-img-top1{
+    display: none;
+}
+
+.trending:hover .card-img-top2{
+    display: block;
+}
+
+
+.nav-pills .nav-link.active {
+     background-color: black;
+}
+
+
+#tshirts, #jeans, #trousers, #trend, #cords{
+    display: none;
+}
+
+.jumbotron{
+    min-height: 600px;
+}
+
+
+
+
+/* login and register */
+
+#log {  
+    background-color: rgb(236, 231, 231);
+    padding-top: 100px;  /* Adjust for the fixed-top navbar */
+    padding-bottom: 60px; /* Adjust for the fixed-bottom navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  hr {
+    width: 100%; /* Ensures it spans the full width */
+    border: 1px solid #ccc;
+}
+  
+  /* Form styles */
+  form {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    
+  }
+
+
+
+#btnlog{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#register{
+    display: none;
+}
+
+#nm{
+   margin-top: 25px; 
+}
+
+
+/*Prodcut Details*/
+.productDetails{
+    margin-top: 100px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.productimg{
+max-height: 80vh;
+}
+
+.productimg .carousel-inner img{
+max-height: 75vh;
+object-fit: contain;
+width: 100%;
+height: auto;
+}
+
+
+
+.productsum{
+margin-right: 5px;
+}
+
+
+.checked{
+    color: orange;
+}
+
+.rev{
+    color: gray;
+    font-size: 13px;
+}
+
+#cart{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    border: 2px solid #d1d1d1; /* Border for the entire cart button */
+    border-radius: 30px; /* Rounded corners */
+    overflow: hidden;
+    max-width: 100%;
+    padding: 0;
+}
+
+#minus, #plus, #quantity {
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #333;
+    background-color: #fff;
+    height: 100%;
+  }
+
+#minus, #plus{
+    cursor: pointer;
+}  
+
+#quantity {
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+
+ 
+#add-to-cart {
+    background-color: #2c3e50; /* Dark blue color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    height: 50px; 
+    text-align: center;
+    width: 50%;
+  } 
+
+  #add-to-cart:hover {
+    background-color: #34495e; /* Slight hover effect */
+  }
+
+  #buynow{
+    background-color: orangered; /* Dark blue color */
+    color: white;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 50px;
+    margin-top: 30px;
+    
+  }
+
+
+

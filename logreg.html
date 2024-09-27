@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup/Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f7854c157a.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body id="log">
+
+  <!--navigation-->
+
+  <nav class="navbar bg-dark fixed-top ">
+    <div class="container-fluid d-flex justify-content-between align-items-center ">
+      
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ONE SHOP</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action " style="font-size: 20px;">
+              NEW ARRIVALS
+            </a>
+            <a href="#" class="list-group-item list-group-item-action" style="font-size: 20px;">BEST SELLING</a>
+            <a href="#" class="list-group-item list-group-item-action" style="font-size: 20px;">SNITCH LUXE</a>
+            <a href="#" class="list-group-item list-group-item-action dropdown-toggle" style="font-size: 20px;"
+              data-bs-toggle="dropdown" aria-expanded="false">SHOP</a>
+
+            <div class="dropdown">
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Shirts</a></li>
+                <li><a class="dropdown-item" href="#">T-shirts</a></li>
+                <li><a class="dropdown-item" href="#">Cargo Pants</a></li>
+                <li><a class="dropdown-item" href="#">Jeans</a></li>
+              </ul>
+            </div>
+
+            <a href="#" class="list-group-item list-group-item-action" style="font-size: 20px;">TRACK ORDER</a>
+            <a href="#" class="list-group-item list-group-item-action" style="font-size: 20px;">PLACE A RETURN/EXCHANGE
+              REQUEST</a>
+            <a href="#" class="list-group-item list-group-item-action" style="font-size: 20px;">BECOME OUR BRAND
+              AMBASSADOR</a>
+            <a href="#" class="list-group-item list-group-item-action" style="font-size: 20px;">AFFILIATE PROGRAM</a>
+            <a href="#" class="list-group-item list-group-item-action" style="font-size: 20px;">CUSTOMER SUPPORT</a>
+            <a href="#" class="list-group-item list-group-item-action" style="font-size: 20px;">VISIT STORE</a>
+            <a class="list-group-item list-group-item-action" style="font-size: 20px;">REVOLVE</a>
+          </div>
+        </div>
+      </div>
+      
+      <a class="navbar-brand text-light font-weight-bold mx-auto order-2" href="index.html">
+        <img src="logo1.png" id="logo1">
+      </a>
+
+      <div class="d-flex nav nav-light  align-items-center">
+        <a class="nav-link active text-light  d-none d-lg-block " href="logreg.html"><i class="fa fa-solid fa-user" style="font-size: 20px;"></i>
+        </a>
+
+
+        <i class=" fas fa-search nav-link text-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+          aria-controls="offcanvasTop" style="cursor: pointer;font-size: 20px;"></i>
+
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+          <div class="offcanvas-header">
+            <h5 id="offcanvasTopLabel">Feel Your Style</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="search-bar d-flex m-auto" id="searchBar">
+              <input type="text" class="form-control" placeholder="Search..." style="margin-right: 2%;">
+              <button class="btn btn-dark" type="submit">Search</button>
+
+            </div>
+          </div>
+        </div>
+
+        <a class="nav-link text-light d-none d-lg-block " href="#" style="font-size: 23px;"><i class="fa fa-heart-o"></i></a>
+        <a class="nav-link text-light d-none d-lg-block " href="#" style="font-size: 20px;"><i class="fa fa-shopping-cart"></i></a>
+        <a class="nav-link text-light d-none d-lg-block " href="#" style="font-size: 20px;"><i class="fa fa-camera-retro"></i></a>
+
+      </div>
+
+
+    </div>
+  </nav>
+
+  <!--Bottom navbar for smaller screens-->
+  <nav class="navbar bg-dark fixed-bottom d-flex justify-content-around d-lg-none" style="border: none;">
+    
+    <a class="nav-link text-light" href="#"><i class="fa fa-heart-o"></i></a>
+    
+    <a class="nav-link text-light" href="#"><i class="fa fa-camera-retro"></i></a>
+    <a class="nav-link text-light" href="#"><i class="fa fa-shopping-cart"></i></a>
+    <a class="nav-link text-light" href="logreg.html"><i class="fa fa-user"></i></a>
+  </nav>
+  
+  <div class="container  d-flex justify-content-center">
+  <form class="py-4 m-4">
+      <div id="btnlog">
+        <button class="btn btn-outline-dark m-1 active pill d-grid  col-4 " aria-pressed="true" id="btnlogin">Login</button>
+        <button class="btn btn-outline-dark pill m-1 ms-5 d-grid col-4" id="btnregister">Register</button>
+      </div>
+
+  <!--login-->  
+      <section id="login">
+        <div class=" mb-4">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class=" mb-4">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </section>  
+  
+  <!--register-->
+  <section id="register">
+      <div class=" mb-4">
+        <label for="name" class="form-label">Username</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+        <div class=" mb-4">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class=" mb-4">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class=" mb-4">
+          <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword2">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        
+  </section>
+</form>
+</div>
+
+<hr>
+
+ <!--Footer-->
+ <section id="footer1" class="d-flex container py-2">
+  <div class="row" >
+  <div id="offline" class="col-12 col-md-6 col-lg-3 mb-4 text-md-start">
+  <ul> 
+  <li><h6 class="lead">OFFLINE STORE</h6></li>
+  <li style="text-decoration: underline">
+  <a>Find Stores Near me</a></li>
+  </ul>
+  </div>
+
+
+  <div id="know" class="col-12 col-md-6 col-lg-3 mb-4 text-md-start" >
+  <ul>
+  <li><h6 class="lead">GET TO KNOW US</h6></li>
+  <li><a>FAQ's</a></li>
+  <li><a>Contact Us</a></li>
+  <li><a>Blogs</a></li>
+  <li><a>Terms & Conditions</a></li>
+  </ul>
+  </div>
+  
+  <div id="track" class="col-12 col-md-6 col-lg-3 mb-4 text-md-start">
+  <ul>
+  <li><h6 class="lead">TRACK OR RETURN/EXCHANGE ORDER</h6></li>
+  <li><a>TRACK ORDER</a></li>
+  <li><a>PLACE RETURN/EXCHANGE REQUEST</a></li>
+  <li><a>RETURNS/EXCHANGE POLICY</a></li>
+  </ul>
+  </div>
+  
+  <div id="care" class="col-12 col-md-6 col-lg-3 mb-4 text-md-start">
+    <ul>
+    <li><h6 class="lead">CUSTOMER CARE</h6></li>
+    <li><p>Timings: 10 AM - 7 PM (Mon - Sat)</p></li>
+    <li><p>Whatsapp: +91 9090909090</p></li>
+    <li><p>Instagram: @oneshop.co.in</p></li>
+    </ul>
+  </div>
+  
+  </div>
+</section>
+
+<section id="socials">
+<div class="social-icons m-5 text-start ">
+  <div class="text-center">
+    <h6 class="lead mb-3">FOLLOW US</h6>
+    
+    <ul class="list-inline"></ul>
+    <li class="list-inline-item">
+      <a href="https://www.instagram.com" target="_blank">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a href="https://www.twitter.com" target="_blank">
+        <i class="fa-brands fa-x-twitter fa-2x"></i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a href="https://www.youtube.com" target="_blank">
+        <i class="fab fa-youtube fa-2x"></i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a href="https://www.facebook.com" target="_blank">
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+<p class="text-center fw-semibold mt-4">&copy; 2024 Designed and made by Nikhil Mohanty</p>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
